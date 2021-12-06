@@ -252,3 +252,7 @@ input:hover, select:hover, textarea:hover {
     color: #999;
 }    
 
+// Removing input background colour for Chrome autocomplete
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #F5F7F4 inset;
+}

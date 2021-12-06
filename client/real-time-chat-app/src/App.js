@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import classNames from 'classnames';
-import './assets/css/styles.scss';
+import './assets/css/styles.scss'
 
 import Chat from './pages/chat';
 import Join from './pages/join';

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import io from 'socket.io-client';
 import ActiveUsers from './../components/activeUsers';
-import Messages from './../components/message';
+import Messages from './../components/messages';
 import moment from 'moment';
-import LoadingScreen from 'react-loading';
+import LoadingScreen from 'react-loading-screen';
 
 var socket;
 const initialState = {
@@ -199,7 +199,7 @@ class Chat extends Component {
                                 </div>
                                 <div className="btnWrap">
                                     <button type="submit" className="btn">
-                                        <i className="fab fa-telegram-plane"></i>
+                                    <i class='fab fa-telegram-plane fa-pull-left fa-3x'></i>
                                     </button>
                                     <button id="send_location" className="btn" onClick={() => this.sendLocation()}>
                                         <i className="far fa-compass"></i>
